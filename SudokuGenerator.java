@@ -5,9 +5,9 @@ public class SudokuGenerator {
     public static int[][] board = new int[9][9];
 
     public static void main(String[] args) {
-        fillBoard();
-        mixRows();
-        mixCols();
+        fill();
+        mixR();
+        mixC();
         mixNums();
         printBoard();
 
@@ -27,7 +27,7 @@ public class SudokuGenerator {
 
     }
 
-    public static void fillBoard() {
+    public static void fill() {
 
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
@@ -40,7 +40,7 @@ public class SudokuGenerator {
 
     }
 
-    public static void mixRows() {
+    public static void mixR() {
 
         for (int g = 0; g < 3; g++) {
 
@@ -66,7 +66,7 @@ public class SudokuGenerator {
 
     }
 
-    public static void mixCols() {
+    public static void mixC() {
 
         for (int g = 0; g < 3; g++) {
 
